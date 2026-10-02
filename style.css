@@ -43,6 +43,9 @@ body{
     gap: 10px;
     align-items: center;
 }
+.navbar__s4{
+    display: none;
+}
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -122,6 +125,8 @@ body{
 }
 .course-card1,.course-card2,.course-card3,.course-card4{
     width: 250px;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .Recommended{
  padding:20px;
@@ -174,4 +179,45 @@ body{
 }
 .footer_one p{
     margin: 20px;
+}
+  
+ @media screen and (max-width:800px){
+
+    body{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    /* Hide desktop navbar items */
+    .navbar__s2{
+        display: none;
+    }
+
+    .navbar__s3{
+        display: none;
+    }
+
+    /* Show menu icon */
+    .navbar__s4{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    /* Hide categories */
+    .cato{
+        display: none;
+    }
+
+    /* Two cards per row */
+    .course-card1,
+    .course-card2,
+    .course-card3,
+    .course-card4{
+        flex-basis: 45%;
+    }
+
 }
